@@ -1,0 +1,19 @@
+Split,Class ID,Nama Kelas,Jumlah Objek
+train,0,Janjang kosong,566
+train,1,Kurang masak,1781
+train,2,TBS abnormal,1843
+train,3,TBS masak,2142
+train,4,TBS mentah,2005
+train,5,Terlalu masak,1803
+valid,0,Janjang kosong,203
+valid,1,Kurang masak,530
+valid,2,TBS abnormal,493
+valid,3,TBS masak,585
+valid,4,TBS mentah,642
+valid,5,Terlalu masak,555
+test,0,Janjang kosong,88
+test,1,Kurang masak,264
+test,2,TBS abnormal,263
+test,3,TBS masak,246
+test,4,TBS mentah,266
+test,5,Terlalu masak,283
