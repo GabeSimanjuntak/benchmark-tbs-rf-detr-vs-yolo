@@ -1,0 +1,4 @@
+Split,Total Bounding Box,Valid Bounding Box,Invalid Format,Invalid Class,Invalid Coordinate,Invalid Size
+train,17188,17188,0,0,0,0
+valid,3106,3106,0,0,0,0
+test,1531,1531,0,0,0,0

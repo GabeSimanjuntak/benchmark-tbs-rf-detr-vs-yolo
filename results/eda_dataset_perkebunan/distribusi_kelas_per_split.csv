@@ -1,0 +1,16 @@
+Split,Nama Kelas,Jumlah Objek
+train,Abnormal,2802
+train,Flower,2673
+train,Ripe,2669
+train,Underripe,2605
+train,Unripe,6439
+valid,Abnormal,318
+valid,Flower,251
+valid,Ripe,443
+valid,Underripe,305
+valid,Unripe,1789
+test,Abnormal,139
+test,Flower,182
+test,Ripe,195
+test,Underripe,181
+test,Unripe,834
