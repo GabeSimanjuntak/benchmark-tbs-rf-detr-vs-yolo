@@ -1,0 +1,7 @@
+Dataset,Split,Jumlah Gambar,Objek Asli,Unripe (ID 0),Ripe (ID 1),Gambar Tanpa Target,Label Asli Tidak Ditemukan
+dataset-pabrik-kalsel,train,2908,10140,2005,2142,862,0
+dataset-pabrik-kalsel,valid,835,3008,642,585,257,0
+dataset-pabrik-kalsel,test,417,1410,266,246,152,0
+dataset-perkebunan-kalteng,train,10221,17188,6439,2669,4141,0
+dataset-perkebunan-kalteng,valid,1583,3106,1789,443,246,0
+dataset-perkebunan-kalteng,test,765,1531,834,195,118,0
