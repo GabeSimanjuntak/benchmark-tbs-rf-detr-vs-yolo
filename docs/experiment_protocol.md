@@ -40,10 +40,11 @@ Tiga skenario pengujian ditetapkan:
 ## 4. Ketentuan Penggunaan Data
 
 1. Dataset pengujian tidak boleh digunakan untuk training maupun pemilihan hyperparameter.
-2. Split asli masing-masing dataset dipertahankan.
+2. Pembagian train, validation, dan test dari sumber dataset dipertahankan.
 3. Data validation hanya berasal dari dataset training yang memiliki split validation.
-4. Data test Malaysia berjumlah 89 gambar.
-5. Dataset Malaysia train berjumlah 361 gambar dan hanya digunakan sebagai data training ketika Malaysia bukan domain target.
+4. Dataset Malaysia v7 yang digunakan dalam eksperimen utama terdiri atas 283 gambar training dan 69 gambar testing.
+5. Dataset Malaysia tidak memiliki split validation.
+6. Dataset Malaysia train hanya digunakan sebagai data training ketika Malaysia bukan domain target.
 
 ## 5. Model yang Dibandingkan
 

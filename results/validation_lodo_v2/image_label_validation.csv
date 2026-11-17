@@ -1,0 +1,10 @@
+scenario,split,images,labels,missing_labels,orphan_labels,missing_examples,orphan_examples
+lodo_1_pabrik,train,2594,2594,0,0,[],[]
+lodo_1_pabrik,val,728,728,0,0,[],[]
+lodo_1_pabrik,test,79,79,0,0,[],[]
+lodo_2_kalteng,train,979,979,0,0,[],[]
+lodo_2_kalteng,val,211,211,0,0,[],[]
+lodo_2_kalteng,test,278,278,0,0,[],[]
+lodo_3_malaysia,train,3007,3007,0,0,[],[]
+lodo_3_malaysia,val,939,939,0,0,[],[]
+lodo_3_malaysia,test,69,69,0,0,[],[]

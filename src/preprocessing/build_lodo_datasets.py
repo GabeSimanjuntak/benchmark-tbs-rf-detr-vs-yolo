@@ -11,9 +11,9 @@ import pandas as pd
 PROJECT_DIR = Path(__file__).resolve().parents[2]
 
 FILTERED_DIR = PROJECT_DIR / "datasets" / "processed" / "filtered"
-MALAYSIA_DIR = PROJECT_DIR / "datasets" / "processed" / "dataset-malaysia"
+MALAYSIA_DIR = PROJECT_DIR / "datasets" / "processed" / "dataset-malaysia-v7-filtered"
 
-OUTPUT_ROOT = PROJECT_DIR / "datasets" / "experiments"
+OUTPUT_ROOT = PROJECT_DIR / "datasets" / "experiments" / "v2"
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
@@ -198,7 +198,6 @@ for scenario_name, configuration in SCENARIOS.items():
 
     print(f"Berhasil: {scenario_dir}")
 
-
 # =====================================================
 # 6. LAPORAN HASIL
 # =====================================================
@@ -206,8 +205,6 @@ for scenario_name, configuration in SCENARIOS.items():
 summary_df = pd.DataFrame(summary)
 
 print(summary_df.to_string(index=False))
-
-OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
 
 summary_path = OUTPUT_ROOT / "lodo_build_summary.csv"
 

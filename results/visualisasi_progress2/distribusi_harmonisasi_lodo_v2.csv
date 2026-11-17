@@ -1,0 +1,9 @@
+Dataset,Split,Jumlah Gambar,Unripe,Ripe,Total Bounding Box,Label Tidak Ditemukan
+Pabrik Kalsel,train,696,1788,581,2369,0
+Pabrik Kalsel,valid,211,558,173,731,0
+Pabrik Kalsel,test,79,217,53,270,0
+Perkebunan Kalteng,train,2311,1967,2321,4288,0
+Perkebunan Kalteng,valid,728,925,398,1323,0
+Perkebunan Kalteng,test,278,344,159,503,0
+Malaysia v7,train,283,170,164,334,0
+Malaysia v7,test,69,30,39,69,0

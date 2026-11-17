@@ -1,0 +1,116 @@
+# Preprocessing Configuration
+# Project: Cross-Domain Oil Palm FFB Benchmark
+
+dataset:
+  version: "lodo_v2"
+  num_classes: 2
+  class_names:
+    0: "Unripe"
+    1: "Ripe"
+
+image:
+  input_size: 640
+  input_size_status: "provisional"
+  preserve_original: true
+  resize: "model_native"
+  normalization: "model_native"
+
+annotation:
+  format: "yolo"
+  num_classes: 2
+  class_mapping:
+    0: "Unripe"
+    1: "Ripe"
+
+
+augmentation:
+  enabled: true
+  apply_to:
+    - train
+  exclude:
+    - validation
+    - test
+
+  policy: "controlled_horizontal_flip"
+
+  horizontal_flip:
+    enabled: true
+    probability: 0.5
+
+  vertical_flip:
+    enabled: false
+    probability: 0.0
+
+  rotation:
+    enabled: false
+    degrees: 0.0
+
+  brightness_contrast:
+    enabled: false
+
+  translation:
+    enabled: false
+    value: 0.0
+
+  scaling:
+    enabled: false
+    value: 0.0
+
+  mosaic:
+    enabled: false
+    probability: 0.0
+
+  mixup:
+    enabled: false
+    probability: 0.0
+
+  copy_paste:
+    enabled: false
+    probability: 0.0
+
+
+  framework_settings:
+    yolo:
+      fliplr: 0.5
+      flipud: 0.0
+      degrees: 0.0
+      translate: 0.0
+      scale: 0.0
+      shear: 0.0
+      perspective: 0.0
+      hsv_h: 0.0
+      hsv_s: 0.0
+      hsv_v: 0.0
+      mosaic: 0.0
+      mixup: 0.0
+      copy_paste: 0.0
+
+    rfdetr:
+      augmentation_backend: "albumentations"
+      scale_jitter: false
+      aug_config:
+        HorizontalFlip:
+          p: 0.5
+
+  rfdetr:
+  augmentation_backend: "albumentations"
+  scale_jitter: false
+  aug_config:
+    HorizontalFlip:
+      p: 0.5
+
+  horizontal_flip:
+    enabled: true
+    probability: 0.5
+
+  rotation:
+    enabled: false
+
+  brightness_contrast:
+    enabled: false
+
+validation:
+  check_image_label_pairs: true
+  check_class_ids: true
+  check_bbox_coordinates: true
+  check_data_leakage: true

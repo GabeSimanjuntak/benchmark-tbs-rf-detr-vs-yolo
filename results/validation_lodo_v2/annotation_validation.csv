@@ -1,0 +1,10 @@
+scenario,split,total_boxes,unripe_id_0,ripe_id_1,empty_labels,invalid_format,invalid_class,invalid_coordinates,invalid_dimensions
+lodo_1_pabrik,train,4622,2137,2485,0,0,0,0,0
+lodo_1_pabrik,val,1323,925,398,0,0,0,0,0
+lodo_1_pabrik,test,270,217,53,0,0,0,0,0
+lodo_2_kalteng,train,2703,1958,745,0,0,0,0,0
+lodo_2_kalteng,val,731,558,173,0,0,0,0,0
+lodo_2_kalteng,test,503,344,159,0,0,0,0,0
+lodo_3_malaysia,train,6657,3755,2902,0,0,0,0,0
+lodo_3_malaysia,val,2054,1483,571,0,0,0,0,0
+lodo_3_malaysia,test,69,30,39,0,0,0,0,0
