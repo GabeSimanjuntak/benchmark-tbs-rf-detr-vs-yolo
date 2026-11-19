@@ -1,0 +1,96 @@
+experiment:
+  name: baseline_v1
+  description: "Controlled baseline for cross-domain TBS detection"
+  seed: 42
+  deterministic: true
+
+dataset:
+  version: lodo_v2
+  root: datasets/experiments/v2
+  num_classes: 2
+  class_names:
+    - Unripe
+    - Ripe
+  scenarios:
+    - lodo_1_pabrik
+    - lodo_2_kalteng
+    - lodo_3_malaysia
+
+training:
+  epochs: 100
+  batch_size: 2
+  effective_batch_size: 16
+  workers: 0
+  pretrained: true
+  amp: true
+
+  yolo:
+    image_size: 512
+    nbs: 16
+
+  rfdetr:
+    resolutions:
+      nano: 384
+      small: 512
+      medium: 576
+    grad_accum_steps: 8
+    auto_batch_target_effective: 16
+
+  validation:
+    enabled: true
+    interval: 1
+
+  testing:
+    enabled: true
+    only_after_training: true
+
+augmentation:
+  horizontal_flip:
+    enabled: true
+    probability: 0.5
+  vertical_flip:
+    enabled: false
+    probability: 0.0
+  rotation:
+    enabled: false
+    degrees: 0.0
+  translation:
+    enabled: false
+    value: 0.0
+  scaling:
+    enabled: false
+    value: 0.0
+  brightness_contrast:
+    enabled: false
+  mosaic:
+    enabled: false
+    probability: 0.0
+  mixup:
+    enabled: false
+    probability: 0.0
+  copy_paste:
+    enabled: false
+    probability: 0.0
+
+evaluation:
+  metrics:
+    - precision
+    - recall
+    - f1
+    - map50
+    - map50_95
+  inference:
+    measure_latency: true
+    measure_fps: true
+    warmup_iterations: 50
+    benchmark_iterations: 200
+  model_complexity:
+    measure_parameters: true
+    measure_gflops: true
+    measure_checkpoint_size: true
+
+reproducibility:
+  save_training_config: true
+  save_metrics_csv: true
+  save_best_checkpoint: true
+  save_last_checkpoint: true
